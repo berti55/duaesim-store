@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DUAeSIM – Internet Global</title>
+  <title>DUAeSIM â€“ Internet Global</title>
   <style>
     body {
       margin: 0;
@@ -92,25 +92,45 @@
       margin-top: 10px;
       border-radius: 6px;
     }
+    section {
+      padding: 40px 20px;
+    }
     .why-section {
       background-color: #ff007f;
       color: white;
-      padding: 40px 20px;
       text-align: center;
     }
-    .why-section h2 {
-      margin-bottom: 20px;
-      color: #fff;
+    .why-section h2,
+    .faq h2,
+    .devices h2 {
+      color: #111;
+      text-align: center;
+      margin-bottom: 30px;
     }
-    .why-section .items {
+    .why-section h4,
+    .faq h4,
+    .devices h4 {
+      margin-bottom: 8px;
+    }
+    .why-section .items,
+    .faq .items,
+    .devices .items {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 20px;
       max-width: 1000px;
       margin: auto;
     }
-    .why-section h4 {
-      color: #fff;
+    .faq details {
+      background: #f9f9f9;
+      border-radius: 6px;
+      padding: 10px 15px;
+      border: 1px solid #ddd;
+    }
+    .faq summary {
+      font-weight: bold;
+      cursor: pointer;
+      color: #ff007f;
     }
     footer {
       background-color: #111;
@@ -132,33 +152,89 @@
   </header>
 
   <div class="search-container">
-    <input type="text" placeholder="Kërko Shtetin">
-    <div class="rating">Vlerësimi i klientëve: <span>★ 4.8</span></div>
+    <input type="text" placeholder="KÃ«rko Shtetin">
+    <div class="rating">VlerÃ«simi i klientÃ«ve: <span>â˜… 4.8</span></div>
   </div>
 
+  
   <section class="hero">
-    <h2>Internet Global në çdo hap</h2>
-    <p>Shmang roaming-un. Merr planin tënd eSIM për çdo udhëtim.</p>
+    <h2>Internet Global nÃ« Ã§do hap</h2>
+    <p>Shmang roaming-un. Merr planin tÃ«nd eSIM pÃ«r Ã§do udhÃ«tim.</p>
+  </section>
+
+  <section style="background-color: #fdf5f9; padding: 40px 20px;">
+    <h2 style="text-align: center; color: #ff007f; margin-bottom: 30px;">Zgjidh Planin tÃ«nd</h2>
+    <div style="overflow-x: auto; white-space: nowrap; padding-bottom: 10px;">
+      <div style="display: inline-block; width: 250px; margin-right: 16px; vertical-align: top; background: white; border-radius: 10px; border: 1px solid #eee; padding: 20px; text-align: center;">
+        <h4 style="margin-bottom: 8px;">Plan 1GB</h4>
+        <p style="font-size: 14px;">PÃ«r mesazhe & navigim</p>
+        <p><strong>2.99â‚¬</strong></p>
+        <button style="background-color: #ff007f; color: white; padding: 8px 16px; border: none; border-radius: 5px; font-weight: bold;">Merre Tani</button>
+      </div>
+      <div style="display: inline-block; width: 250px; margin-right: 16px; vertical-align: top; background: white; border-radius: 10px; border: 1px solid #eee; padding: 20px; text-align: center;">
+        <h4 style="margin-bottom: 8px;">Plan 3GB</h4>
+        <p style="font-size: 14px;">PÃ«r udhÃ«time tÃ« shkurtra</p>
+        <p><strong>4.99â‚¬</strong></p>
+        <button style="background-color: #ff007f; color: white; padding: 8px 16px; border: none; border-radius: 5px; font-weight: bold;">Merre Tani</button>
+      </div>
+      <div style="display: inline-block; width: 250px; margin-right: 16px; vertical-align: top; background: white; border-radius: 10px; border: 1px solid #eee; padding: 20px; text-align: center;">
+        <h4 style="margin-bottom: 8px;">Plan 5GB</h4>
+        <p style="font-size: 14px;">PÃ«r pÃ«rdorues aktiv</p>
+        <p><strong>7.99â‚¬</strong></p>
+        <button style="background-color: #ff007f; color: white; padding: 8px 16px; border: none; border-radius: 5px; font-weight: bold;">Merre Tani</button>
+      </div>
+      <div style="display: inline-block; width: 250px; margin-right: 16px; vertical-align: top; background: white; border-radius: 10px; border: 1px solid #eee; padding: 20px; text-align: center;">
+        <h4 style="margin-bottom: 8px;">Plan 10GB</h4>
+        <p style="font-size: 14px;">Streaming & video call</p>
+        <p><strong>11.99â‚¬</strong></p>
+        <button style="background-color: #ff007f; color: white; padding: 8px 16px; border: none; border-radius: 5px; font-weight: bold;">Merre Tani</button>
+      </div>
+    </div>
+  </section>
+
+    <h2>Internet Global nÃ« Ã§do hap</h2>
+    <p>Shmang roaming-un. Merr planin tÃ«nd eSIM pÃ«r Ã§do udhÃ«tim.</p>
   </section>
 
   <section class="plans">
     <div class="plan">
       <h3>Plan 1GB</h3>
-      <p>Ideale për mesazhe dhe email</p>
-      <p><strong>2.99€</strong></p>
+      <p>Ideale pÃ«r mesazhe dhe email</p>
+      <p><strong>2.99â‚¬</strong></p>
       <button>Shiko Planin</button>
     </div>
     <div class="plan">
       <h3>Plan 5GB</h3>
-      <p>Për udhëtime të shkurtra</p>
-      <p><strong>8.99€</strong></p>
+      <p>PÃ«r udhÃ«time tÃ« shkurtra</p>
+      <p><strong>8.99â‚¬</strong></p>
       <button>Shiko Planin</button>
     </div>
     <div class="plan">
       <h3>Plan 10GB</h3>
-      <p>Për përdorues aktiv</p>
-      <p><strong>14.99€</strong></p>
+      <p>PÃ«r pÃ«rdorues aktiv</p>
+      <p><strong>14.99â‚¬</strong></p>
       <button>Shiko Planin</button>
+    </div>
+  </section>
+
+  <section style="background-color: #fff0f6; text-align: center;">
+    <h2 style="color: #ff007f;">Si Funksionon?</h2>
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 40px; max-width: 1000px; margin: auto;">
+      <div style="flex: 1; min-width: 220px;">
+        <div style="font-size: 40px;">ðŸ“¶</div>
+        <h4>Zgjidh Planin</h4>
+        <p>Zgjidh planin qÃ« tÃ« pÃ«rshtatet me udhÃ«timin tÃ«nd.</p>
+      </div>
+      <div style="flex: 1; min-width: 220px;">
+        <div style="font-size: 40px;">âœ‰ï¸</div>
+        <h4>Merr QR</h4>
+        <p>Pas blerjes, do tÃ« pranosh njÃ« email me QR pÃ«r aktivizim.</p>
+      </div>
+      <div style="flex: 1; min-width: 220px;">
+        <div style="font-size: 40px;">ðŸŒ</div>
+        <h4>Lidhu & UdhÃ«to</h4>
+        <p>Skano QR, aktivizo planin dhe lidhu nÃ« Ã§do vend tÃ« botÃ«s.</p>
+      </div>
     </div>
   </section>
 
@@ -166,26 +242,109 @@
     <h2>Pse DUAeSIM?</h2>
     <div class="items">
       <div>
-        <h4>Rimbursim i plotë</h4>
-        <p>Nëse hasni ndonjë problem, e rregullojmë ose ju kthejmë pagesën 100%.</p>
+        <h4>Rimbursim i plotÃ«</h4>
+        <p>NÃ«se hasni ndonjÃ« problem, e rregullojmÃ« ose ju kthejmÃ« pagesÃ«n 100%.</p>
       </div>
       <div>
-        <h4>Aktivizo kur të duash</h4>
-        <p>Planet nuk skadojnë – aktivizohen kur të jesh gati. Vlefshmëri 180 ditë pas blerjes.</p>
+        <h4>Aktivizo kur tÃ« duash</h4>
+        <p>Planet nuk skadojnÃ« â€“ aktivizohen kur tÃ« jesh gati. VlefshmÃ«ri 180 ditÃ« pas blerjes.</p>
       </div>
       <div>
-        <h4>Pagesë e sigurt</h4>
-        <p>Paguani lehtë përmes platformave të sigurta si Stripe. Pa rrezik.</p>
+        <h4>PagesÃ« e sigurt</h4>
+        <p>Paguani lehtÃ« pÃ«rmes platformave tÃ« sigurta si Stripe. Pa rrezik.</p>
       </div>
       <div>
         <h4>Suport 24/7</h4>
-        <p>Na kontaktoni kurdo. Ekipi ynë është gjithmonë gati për ndihmë.</p>
+        <p>Na kontaktoni kurdo. Ekipi ynÃ« Ã«shtÃ« gjithmonÃ« gati pÃ«r ndihmÃ«.</p>
       </div>
     </div>
   </section>
 
+  <section class="faq">
+    <h2>Pyetje tÃ« Shpeshta</h2>
+    <div class="items">
+      <details><summary>Si e marr eSIM-in?</summary><p>Pas blerjes, do tÃ« pranoni njÃ« email me QR kod pÃ«r aktivizim.</p></details>
+      <details><summary>Kur aktivizohet plani?</summary><p>Plani aktivizohet vetÃ«m kur e instaloni dhe e pÃ«rdorni pÃ«r herÃ« tÃ« parÃ«.</p></details>
+      <details><summary>A funksionon nÃ« tÃ« gjitha telefonat?</summary><p>Jo, vetÃ«m pajisjet qÃ« mbÃ«shtesin eSIM.</p></details>
+      <details><summary>A mund tÃ« kÃ«rkoj rimbursim?</summary><p>Po, nÃ«se keni problem teknik dhe nuk aktivizohet, ju kthejmÃ« pagesÃ«n.</p></details>
+    </div>
+  </section>
+
+  
+  
+  <section class="devices">
+    <h2>Cilat pajisje mbÃ«shtesin eSIM?</h2>
+    <div class="items">
+      <details><summary><strong>iPhone</strong></summary>
+        <p>iPhone XR, XS, 11, 12, 13, 14, 15, 16 â€“ tÃ« gjitha modelet Pro, Max dhe Plus. iPhone 14+ (SHBA) mbÃ«shtet vetÃ«m eSIM.</p>
+      </details>
+      <details><summary><strong>Samsung</strong></summary>
+        <p>Galaxy S20, S21, S22, S23, S24, S25, S25 Ultra, Note20 Ultra, Z Fold 2/3/4/5, Z Flip 3/4/5 â€“ versionet me eSIM tÃ« aktivizuar.</p>
+      </details>
+      <details><summary><strong>Google Pixel</strong></summary>
+        <p>Pixel 3 (vetÃ«m SHBA), Pixel 4, 5, 6, 7, 8 â€“ tÃ« gjitha modelet mbÃ«shtesin eSIM.</p>
+      </details>
+      <details><summary><strong>iPad & Tableta</strong></summary>
+        <p>iPad Pro, iPad Air 3/4/5, iPad 7â€“10 (WiFi + Cellular), iPad Mini 5/6 â€“ vetÃ«m modelet me LTE/eSIM.</p>
+      </details>
+      <details><summary><strong>LaptopÃ«</strong></summary>
+        <p>Surface Pro LTE, Lenovo Yoga 5G, Dell Latitude me eSIM, HP Elite me LTE â€“ sipas modelit dhe rajonit.</p>
+      </details>
+    </div>
+  </section>
+
+    <h2>Cilat pajisje mbÃ«shtesin eSIM?</h2>
+    <div class="items">
+      <details><summary><strong>iPhone</strong></summary><p>MbÃ«shtetet nga XR, XS, 11, 12, 13, 14, 15, 16 â€“ tÃ« gjitha modelet Pro, Plus dhe Max. iPhone 14+ nÃ« SHBA mbÃ«shtet vetÃ«m eSIM.</p></details>
+      <details><summary><strong>Samsung</strong></summary><p>Galaxy S20, S21, S22, S23, S24, S24 Ultra, Note20, Z Fold 2/3/4/5, Z Flip 3/4/5 â€“ versionet me eSIM tÃ« aktivizuar.</p></details>
+      <details><summary><strong>Pixel</strong></summary><p>Google Pixel 3 (nga SHBA), Pixel 4, 5, 6, 7, 8 â€“ tÃ« gjitha versionet me pÃ«rkrahje zyrtare pÃ«r eSIM.</p></details>
+      <details><summary><strong>Tableta & Laptops</strong></summary><p>iPad Pro, iPad Air 3/4/5, iPad 7â€“10 (WiFi + Cellular), Surface Pro LTE, Lenovo Yoga 5G â€“ qÃ« kanÃ« model me eSIM.</p></details>
+    </div>
+  </section>
+
+    <h2>Cilat pajisje mbÃ«shtesin eSIM?</h2>
+    <div class="items">
+      <div><h4>iPhone</h4><p>XR, XS, 11, 12, 13, 14, 15, 16 â€“ tÃ« gjitha modelet Pro, Plus dhe Max</p></div>
+      <div><h4>Samsung</h4><p>S20+, S21, S22, S23, S24, S24 Ultra, Z Flip & Fold</p></div>
+      <div><h4>Pixel</h4><p>Pixel 3, 4, 5, 6, 7, 8 dhe mÃ« tÃ« rinjtÃ«</p></div>
+      <div><h4>iPad & Tablets</h4><p>iPad Pro, iPad Air (2020+), Surface Pro LTE</p></div>
+    </div>
+  </section>
+
+  
+  <section style="background-color: #fdf5f9; padding: 40px 20px;">
+    <h2 style="text-align: center; color: #ff007f; margin-bottom: 30px;">Zgjidh Planin tÃ«nd</h2>
+    <div style="overflow-x: auto; white-space: nowrap; padding-bottom: 10px;">
+      <div style="display: inline-block; width: 250px; margin-right: 16px; vertical-align: top; background: white; border-radius: 10px; border: 1px solid #eee; padding: 20px; text-align: center;">
+        <h4 style="margin-bottom: 8px;">Plan 1GB</h4>
+        <p style="font-size: 14px;">PÃ«r mesazhe & navigim</p>
+        <p><strong>2.99â‚¬</strong></p>
+        <button style="background-color: #ff007f; color: white; padding: 8px 16px; border: none; border-radius: 5px; font-weight: bold;">Merre Tani</button>
+      </div>
+      <div style="display: inline-block; width: 250px; margin-right: 16px; vertical-align: top; background: white; border-radius: 10px; border: 1px solid #eee; padding: 20px; text-align: center;">
+        <h4 style="margin-bottom: 8px;">Plan 3GB</h4>
+        <p style="font-size: 14px;">PÃ«r udhÃ«time tÃ« shkurtra</p>
+        <p><strong>4.99â‚¬</strong></p>
+        <button style="background-color: #ff007f; color: white; padding: 8px 16px; border: none; border-radius: 5px; font-weight: bold;">Merre Tani</button>
+      </div>
+      <div style="display: inline-block; width: 250px; margin-right: 16px; vertical-align: top; background: white; border-radius: 10px; border: 1px solid #eee; padding: 20px; text-align: center;">
+        <h4 style="margin-bottom: 8px;">Plan 5GB</h4>
+        <p style="font-size: 14px;">PÃ«r pÃ«rdorues aktiv</p>
+        <p><strong>7.99â‚¬</strong></p>
+        <button style="background-color: #ff007f; color: white; padding: 8px 16px; border: none; border-radius: 5px; font-weight: bold;">Merre Tani</button>
+      </div>
+      <div style="display: inline-block; width: 250px; margin-right: 16px; vertical-align: top; background: white; border-radius: 10px; border: 1px solid #eee; padding: 20px; text-align: center;">
+        <h4 style="margin-bottom: 8px;">Plan 10GB</h4>
+        <p style="font-size: 14px;">Streaming & video call</p>
+        <p><strong>11.99â‚¬</strong></p>
+        <button style="background-color: #ff007f; color: white; padding: 8px 16px; border: none; border-radius: 5px; font-weight: bold;">Merre Tani</button>
+      </div>
+    </div>
+  </section>
+
+
   <footer>
-    &copy; 2025 DUAeSIM – Të gjitha të drejtat të rezervuara
+    &copy; 2025 DUAeSIM â€“ TÃ« gjitha tÃ« drejtat tÃ« rezervuara
   </footer>
 </body>
 </html>
